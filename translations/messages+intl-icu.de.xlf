@@ -61,6 +61,10 @@
         <source>create_new_secret</source>
         <target>Neues Geheimnis anlegen</target>
       </trans-unit>
+      <trans-unit id="qMn_z4L" resname="meta_description">
+        <source>meta_description</source>
+        <target>Geheimnisse sicher teilen</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
