@@ -42,7 +42,9 @@ final class FlysystemSecretRepository implements SecretRepositoryInterface
     {
         $filename = $this->generateFilename($secret->id);
 
-        $this->filesystem->write($filename, $secret->secret);
+        $this->filesystem->write($filename, $secret->secret, [
+            'visibility' => 'private',
+        ]);
     }
 
     public function remove(Secret $secret): void
