@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}One Time Secret{% endblock %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow">
+    {% block stylesheets %}
+      {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    <script>
+      const APP_BASE_URI = {{ base_uri()|json_encode|raw }};
+      const APP_CSRF_TOKEN = {{ csrf_token('api')|json_encode|raw }}
+    </script>
+    {% block javascripts %}
+      {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+  </head>
+  <body class="d-flex align-items-center min-vh-100">
+    <div class="container my-4">
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>

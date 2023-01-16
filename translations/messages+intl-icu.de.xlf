@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="sQX_c38" resname="create_secret">
+        <source>create_secret</source>
+        <target>Geheimnis anlegen</target>
+      </trans-unit>
+      <trans-unit id="_zBZPKM" resname="copied">
+        <source>copied</source>
+        <target>Kopiert!</target>
+      </trans-unit>
+      <trans-unit id="8WBq3wU" resname="could_not_create_share_link">
+        <source>could_not_create_share_link</source>
+        <target>Der Teilen-Link konnte nicht erstellt werden.</target>
+      </trans-unit>
+      <trans-unit id="x1cfnaH" resname="rate_limit_reached">
+        <source>rate_limit_reached</source>
+        <target>Bitte warten Sie etwas ab, Sie haben die maximale Anzahl an Anfragen erreicht.</target>
+      </trans-unit>
+      <trans-unit id="cw18ysw" resname="your_secret">
+        <source>your_secret</source>
+        <target>Ihr Geheimnis</target>
+      </trans-unit>
+      <trans-unit id="9q1QK89" resname="create_share_link">
+        <source>create_share_link</source>
+        <target>Teilen-Link erstellen</target>
+      </trans-unit>
+      <trans-unit id="RzXTY_R" resname="your_share_link">
+        <source>your_share_link</source>
+        <target>Ihr Teilen-Link</target>
+      </trans-unit>
+      <trans-unit id="b1pgNOd" resname="copy">
+        <source>copy</source>
+        <target>Kopieren</target>
+      </trans-unit>
+      <trans-unit id="g.xGFMx" resname="show_secret">
+        <source>show_secret</source>
+        <target>Geheimnis anzeigen</target>
+      </trans-unit>
+      <trans-unit id="Uxiib01" resname="secret_not_found">
+        <source>secret_not_found</source>
+        <target>Das Geheimnis wurde nicht gefunden. Falls Ihr Link korrekt ist, wurde es bereits von einer anderen Person abgerufen.</target>
+      </trans-unit>
+      <trans-unit id="efOwOqz" resname="could_not_show_secret">
+        <source>could_not_show_secret</source>
+        <target>Entschuldigung, das Geheimnis konnte nicht angezeigt werden.</target>
+      </trans-unit>
+      <trans-unit id="MIC8MOC" resname="attention_only_once">
+        <source>attention_only_once</source>
+        <target>Achtung, das Geheimnis kann nur einmal angezeigt werden.</target>
+      </trans-unit>
+      <trans-unit id="fXtYArt" resname="decryption_error">
+        <source>decryption_error</source>
+        <target>Entschuldigung, die Entschlüsselung ist fehlgeschlagen.</target>
+      </trans-unit>
+      <trans-unit id="hdkGFGf" resname="create_new_secret">
+        <source>create_new_secret</source>
+        <target>Neues Geheimnis anlegen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

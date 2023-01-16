@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="sQX_c38" resname="create_secret">
+        <source>create_secret</source>
+        <target>Create secret</target>
+      </trans-unit>
+      <trans-unit id="_zBZPKM" resname="copied">
+        <source>copied</source>
+        <target>Copied!</target>
+      </trans-unit>
+      <trans-unit id="8WBq3wU" resname="could_not_create_share_link">
+        <source>could_not_create_share_link</source>
+        <target>Sorry, the share link could not be created.</target>
+      </trans-unit>
+      <trans-unit id="x1cfnaH" resname="rate_limit_reached">
+        <source>rate_limit_reached</source>
+        <target>Please wait, you have reached the rate limit</target>
+      </trans-unit>
+      <trans-unit id="cw18ysw" resname="your_secret">
+        <source>your_secret</source>
+        <target>Your secret</target>
+      </trans-unit>
+      <trans-unit id="9q1QK89" resname="create_share_link">
+        <source>create_share_link</source>
+        <target>Create share link</target>
+      </trans-unit>
+      <trans-unit id="RzXTY_R" resname="your_share_link">
+        <source>your_share_link</source>
+        <target>Your share link</target>
+      </trans-unit>
+      <trans-unit id="b1pgNOd" resname="copy">
+        <source>copy</source>
+        <target>Copy</target>
+      </trans-unit>
+      <trans-unit id="g.xGFMx" resname="show_secret">
+        <source>show_secret</source>
+        <target>Show secret</target>
+      </trans-unit>
+      <trans-unit id="Uxiib01" resname="secret_not_found">
+        <source>secret_not_found</source>
+        <target>The secret was not found. If your link is correct, it was already accessed by somebody else.</target>
+      </trans-unit>
+      <trans-unit id="efOwOqz" resname="could_not_show_secret">
+        <source>could_not_show_secret</source>
+        <target>Sorry, the secret could not be shown</target>
+      </trans-unit>
+      <trans-unit id="MIC8MOC" resname="attention_only_once">
+        <source>attention_only_once</source>
+        <target>Attention, the secret can only be shown once!</target>
+      </trans-unit>
+      <trans-unit id="fXtYArt" resname="decryption_error">
+        <source>decryption_error</source>
+        <target>Sorry, the decryption of the secret failed</target>
+      </trans-unit>
+      <trans-unit id="hdkGFGf" resname="create_new_secret">
+        <source>create_new_secret</source>
+        <target>Create new secret</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

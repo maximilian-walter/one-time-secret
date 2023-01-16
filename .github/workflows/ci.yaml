@@ -1,0 +1,60 @@
+name: CI
+
+on:
+    push:
+        branches: [ master, develop ]
+    pull_request:
+        branches: [ master ]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.1'
+                  tools: cs2pr, composer:v2, php-cs-fixer:3.x, vimeo/psalm:4.x
+
+            - name: Setup problem matchers for PHP
+              run: echo "::add-matcher::${{ runner.tool_cache }}/php.json"
+
+            - name: Lint composer.json
+              run: composer validate --strict
+
+            - name: Restore Composer packages
+              id: composer-cache
+              uses: actions/cache@v3
+              with:
+                  path: vendor
+                  key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-composer-
+
+            - name: Install dependencies
+              run: composer install --prefer-dist --no-progress
+
+            - name: Restore PHP-CS-Fixer cache
+              id: php-cs-fixer-cache
+              uses: actions/cache@v3
+              with:
+                  path: .php-cs-fixer.cache
+                  key: ${{ runner.os }}-php-cs-fixer
+
+            - name: Check coding style
+              run: php-cs-fixer fix --dry-run --format=checkstyle | cs2pr
+
+            - name: Restore Psalm cache
+              id: psalm-cache
+              uses: actions/cache@v3
+              with:
+                  path: .psalm-cache
+                  key: ${{ runner.os }}-psalm
+
+            - name: Run static analysis
+              run: psalm --output-format=github
