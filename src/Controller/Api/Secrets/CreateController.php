@@ -43,8 +43,8 @@ final class CreateController extends AbstractController
 
         try {
             Assert::regex($id, Secret::VALID_ID_PATTERN);
-            Assert::notEmpty($secret);
-        } catch (\InvalidArgumentException $exception) {
+            Assert::regex($secret, Secret::VALID_SECRET_PATTERN);
+        } catch (\InvalidArgumentException) {
             throw new BadRequestHttpException('Invalid request body');
         }
 
