@@ -17,7 +17,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 final class CreateSecretController extends AbstractController
 {
-    #[Route('/', name: 'secrets:create', methods: ['GET'])]
+    #[Route('/create', name: 'secrets:create', methods: ['GET'])]
     public function __invoke(): Response
     {
         return $this->render('secrets/create.html.twig');
