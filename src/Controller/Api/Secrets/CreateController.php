@@ -42,8 +42,8 @@ final class CreateController extends AbstractController
         }
 
         try {
-            Assert::regex($id, Secret::VALID_ID_PATTERN);
-            Assert::regex($secret, Secret::VALID_SECRET_PATTERN);
+            Assert::regex((string) $id, Secret::VALID_ID_PATTERN);
+            Assert::regex((string) $secret, Secret::VALID_SECRET_PATTERN);
         } catch (\InvalidArgumentException) {
             throw new BadRequestHttpException('Invalid request body');
         }
