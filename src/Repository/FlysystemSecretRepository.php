@@ -13,7 +13,6 @@ namespace App\Repository;
 
 use App\Entity\Secret;
 use League\Flysystem\FilesystemOperator;
-use Webmozart\Assert\Assert;
 
 final class FlysystemSecretRepository implements SecretRepositoryInterface
 {
@@ -56,8 +55,6 @@ final class FlysystemSecretRepository implements SecretRepositoryInterface
 
     private function generateFilename(string $id): string
     {
-        Assert::regex($id, Secret::VALID_ID_PATTERN);
-
-        return $id . '.bin';
+        return hash('sha256', $id) . '.bin';
     }
 }
