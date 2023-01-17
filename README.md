@@ -44,6 +44,15 @@ Now configure your web-server, using `public` as document root. Now you can crea
 
 https://www.example.com/create
 
+## Maintenance
+
+The secrets are stored in the directory `var/storage/secrets`. You can install a cronjob to delete secrets which were
+never accessed after e.g. one week:
+
+```bash
+find var/storage/secrets -type f -name "*.bin" -mtime +7 -delete
+```
+
 ## License
 
 Copyright © 2023
