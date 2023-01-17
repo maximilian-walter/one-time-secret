@@ -65,6 +65,46 @@
         <source>meta_description</source>
         <target>Geheimnisse sicher teilen</target>
       </trans-unit>
+      <trans-unit id="6sdJ8Lp" resname="400_error_headline">
+        <source>400_error_headline</source>
+        <target>400 Bad Request</target>
+      </trans-unit>
+      <trans-unit id="gnLQ5Mr" resname="400_error_body">
+        <source>400_error_body</source>
+        <target>The Anfrage war ungültig oder enthielt nicht alle Pflichtfelder.</target>
+      </trans-unit>
+      <trans-unit id="qnf69oq" resname="404_error_headline">
+        <source>404_error_headline</source>
+        <target>404 Not Found</target>
+      </trans-unit>
+      <trans-unit id="vZ2BcoF" resname="404_error_body">
+        <source>404_error_body</source>
+        <target>Diese Seite wurde nicht gefunden.</target>
+      </trans-unit>
+      <trans-unit id=".skzej4" resname="409_error_headline">
+        <source>409_error_headline</source>
+        <target>409 Conflict</target>
+      </trans-unit>
+      <trans-unit id="kyG9I07" resname="409_error_body">
+        <source>409_error_body</source>
+        <target>Ein Geheimnis mit dieser ID existiert bereits.</target>
+      </trans-unit>
+      <trans-unit id="WYniVkE" resname="429_error_headline">
+        <source>429_error_headline</source>
+        <target>429 Too Many Requests</target>
+      </trans-unit>
+      <trans-unit id="DZXXsEy" resname="429_error_body">
+        <source>429_error_body</source>
+        <target>Sie haben zu viele Anfragen pro Minute gesendet, bitte warten Sie etwas ab.</target>
+      </trans-unit>
+      <trans-unit id="wfcmIWe" resname="500_error_headline">
+        <source>500_error_headline</source>
+        <target>500 Internal Server Error</target>
+      </trans-unit>
+      <trans-unit id="CWm0MPi" resname="500_error_body">
+        <source>500_error_body</source>
+        <target>Ein Fehler ist aufgetreten, bitte versuchen Sie es später erneut oder informieren den Server Administrator.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
