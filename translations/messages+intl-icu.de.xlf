@@ -25,6 +25,10 @@
         <source>your_secret</source>
         <target>Ihr Geheimnis</target>
       </trans-unit>
+      <trans-unit id="GVdzaHL" resname="your_secret_help">
+        <source>your_secret_help</source>
+        <target>Maximal 1.000 Zeichen</target>
+      </trans-unit>
       <trans-unit id="9q1QK89" resname="create_share_link">
         <source>create_share_link</source>
         <target>Teilen-Link erstellen</target>
