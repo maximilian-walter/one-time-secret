@@ -13,9 +13,9 @@
         <source>copied</source>
         <target>Copied!</target>
       </trans-unit>
-      <trans-unit id="8WBq3wU" resname="could_not_create_share_link">
-        <source>could_not_create_share_link</source>
-        <target>Sorry, the share link could not be created.</target>
+      <trans-unit id="dFoS6Ho" resname="could_not_create_link">
+        <source>could_not_create_link</source>
+        <target>Sorry, the link could not be created.</target>
       </trans-unit>
       <trans-unit id="x1cfnaH" resname="rate_limit_reached">
         <source>rate_limit_reached</source>
@@ -29,13 +29,13 @@
         <source>your_secret_help</source>
         <target>Maximum 1,000 characters</target>
       </trans-unit>
-      <trans-unit id="9q1QK89" resname="create_share_link">
-        <source>create_share_link</source>
-        <target>Create share link</target>
+      <trans-unit id="5nwd9wc" resname="create_link">
+        <source>create_link</source>
+        <target>Create link</target>
       </trans-unit>
-      <trans-unit id="RzXTY_R" resname="your_share_link">
-        <source>your_share_link</source>
-        <target>Your share link</target>
+      <trans-unit id=".oyWqmc" resname="your_link">
+        <source>your_link</source>
+        <target>Your link</target>
       </trans-unit>
       <trans-unit id="b1pgNOd" resname="copy">
         <source>copy</source>
