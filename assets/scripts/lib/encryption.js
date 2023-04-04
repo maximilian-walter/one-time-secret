@@ -10,7 +10,7 @@ function dec2hex (dec) {
 }
 
 export function generateKey() {
-  const input = new Uint8Array(64)
+  const input = new Uint8Array(24)
   window.crypto.getRandomValues(input)
 
   return Array.from(input, dec2hex).join('')

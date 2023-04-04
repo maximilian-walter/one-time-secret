@@ -15,7 +15,7 @@ if (widget) {
       event.preventDefault();
 
       if (formEl.checkValidity()) {
-        const id = nanoid();
+        const id = nanoid(16);
         const key = generateKey();
 
         const requestBody = {
