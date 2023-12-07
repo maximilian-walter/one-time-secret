@@ -28,7 +28,7 @@ work fine).
 
 ```bash
 # Clone app
-git clone https://github.com/maximilian-walter/one-time-secret
+git clone https://github.com/maximilian-walter/one-time-secret.git
 cd one-time-secret
 
 # Install dependencies using Composer
