@@ -24,7 +24,7 @@ final class ShowController extends AbstractController
 {
     public function __construct(
         private readonly SecretRepositoryInterface $repository,
-        private readonly LoggerInterface $accessLogger
+        private readonly LoggerInterface $accessLogger,
     ) {
     }
 

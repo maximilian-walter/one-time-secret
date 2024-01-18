@@ -18,7 +18,7 @@ final class Secret
 
     public function __construct(
         public readonly string $id,
-        public readonly string $secret
+        public readonly string $secret,
     ) {
     }
 }

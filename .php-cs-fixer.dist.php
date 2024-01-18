@@ -21,7 +21,7 @@ return (new PhpCsFixer\Config())
     ->setRules([
         '@Symfony' => true,
         '@Symfony:risky' => true,
-        '@PHP81Migration' => true,
+        '@PHP82Migration' => true,
         '@PHP80Migration:risky' => true,
         'concat_space' => ['spacing' => 'one'],
         'header_comment' => [
@@ -32,7 +32,14 @@ return (new PhpCsFixer\Config())
         'phpdoc_align' => ['align' => 'left'],
         'phpdoc_summary' => false,
         'single_line_throw' => false,
+        'trailing_comma_in_multiline' => [
+            'after_heredoc' => true,
+            'elements' => ['arrays', 'match', 'parameters'],
+        ],
         'use_arrow_functions' => false,
+        'nullable_type_declaration_for_default_null_value' => [
+            'use_nullable_type_declaration' => true,
+        ],
     ])
     ->setRiskyAllowed(true)
     ->setFinder(
