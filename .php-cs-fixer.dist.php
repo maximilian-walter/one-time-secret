@@ -1,11 +1,5 @@
 <?php
 
-/**
- * The web-app for dp DIGITAL PUBLISHERS
- *
- * @copyright Seitenblick digitale Medien GmbH
- */
-
 if (!file_exists(__DIR__ . '/src')) {
     exit(0);
 }
