@@ -20,7 +20,7 @@ opened by somebody else.
 
 ## System requirements
 
-The web app is based on Symfony 6 and requires PHP 8.1 or newer. No database is required. A web server with SSL is
+The web app is based on Symfony 7 and requires PHP 8.2 or newer. No database is required. A web server with SSL is
 highly recommended. For building the frontend-assets (CSS, JavaScript), node.js and npm is required (a current LTS should
 work fine).
 
