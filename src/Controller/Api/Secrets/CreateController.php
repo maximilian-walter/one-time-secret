@@ -13,6 +13,7 @@ namespace App\Controller\Api\Secrets;
 
 use App\Entity\Secret;
 use App\Repository\SecretRepositoryInterface;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,8 +25,10 @@ use Webmozart\Assert\Assert;
 
 final class CreateController extends AbstractController
 {
-    public function __construct(private readonly SecretRepositoryInterface $repository)
-    {
+    public function __construct(
+        private readonly SecretRepositoryInterface $repository,
+        private readonly LoggerInterface $accessLogger
+    ) {
     }
 
     #[Route('/api/secrets', name: 'api:secrets:create', methods: ['POST'])]
@@ -55,6 +58,12 @@ final class CreateController extends AbstractController
         $entity = new Secret($id, $secret);
 
         $this->repository->persist($entity);
+
+        $this->accessLogger->info(sprintf('The secret %s was created by %s', $id, $request->getClientIp()), [
+            'secret_id' => $id,
+            'client_ip' => $request->getClientIp(),
+            'user_agent' => $request->server->get('HTTP_USER_AGENT'),
+        ]);
 
         return $this->json($entity, Response::HTTP_CREATED, [
             'Location' => $this->generateUrl('secrets:show', [
