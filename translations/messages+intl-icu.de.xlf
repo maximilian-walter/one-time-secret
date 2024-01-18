@@ -5,9 +5,15 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
-      <trans-unit id="sQX_c38" resname="create_secret">
-        <source>create_secret</source>
-        <target>Geheimnis anlegen</target>
+      <trans-unit id="YQH40_O" resname="share_secret">
+        <source>share_secret</source>
+        <target>Geheimnis teilen</target>
+      </trans-unit>
+      <trans-unit id="gKBkl3x" resname="share_secret_explanation">
+        <source>share_secret_explanation</source>
+        <target>Über das Formular können Sie verschlüsselt Informationen mit anderen Personen teilen. Sie erhalten einen Link, den Sie z.B. per E-Mail oder Messenger verschicken können. Die Verschlüsselung erfolgt im Browser, der Betreiber des Dienstes hat zu keinem Zeitpunkt Zugriff auf die Informationen im Klartext (Ende-zu-Ende-Verschlüsselung).
+
+Der:die Empfänger:in kann das Geheimnis exakt einmal abrufen, danach werden die Informationen vom Server gelöscht.</target>
       </trans-unit>
       <trans-unit id="_zBZPKM" resname="copied">
         <source>copied</source>

@@ -5,9 +5,15 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
-      <trans-unit id="sQX_c38" resname="create_secret">
-        <source>create_secret</source>
-        <target>Create secret</target>
+      <trans-unit id="YQH40_O" resname="share_secret">
+        <source>share_secret</source>
+        <target>Share secret</target>
+      </trans-unit>
+      <trans-unit id="gKBkl3x" resname="share_secret_explanation">
+        <source>share_secret_explanation</source>
+        <target>You can use the form to share encrypted information with other people. You will receive a link that you can send by e-mail or messenger, for example. Encryption takes place in the browser, the operator of the service never has access to the information in plain text (end-to-end encryption).
+
+The recipient can retrieve the secret exactly once, after which the information is deleted from the server.</target>
       </trans-unit>
       <trans-unit id="_zBZPKM" resname="copied">
         <source>copied</source>
