@@ -34,10 +34,6 @@ cd one-time-secret
 # Install dependencies using Composer
 composer install --no-dev
 composer dump-env prod
-
-# Build frontend assets
-npm ci
-npm run-script build
 ```
 
 Now configure your web-server, using `public` as document root. Now you can create new secrets accessing the URI:
@@ -55,6 +51,6 @@ find var/storage/secrets -type f -name "*.bin" -mtime +7 -delete
 
 ## License
 
-Copyright © 2023
+Copyright © 2024
 
 Licensed under the [MIT License](LICENSE).
