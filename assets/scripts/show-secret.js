@@ -1,6 +1,5 @@
-import { nanoid } from 'nanoid';
-import { generateKey, encrypt, decrypt } from './lib/encryption';
-import copy from 'copy-to-clipboard';
+import { APP_BASE_URI, APP_CSRF_TOKEN } from './constants';
+import { decrypt } from './lib/encryption';
 
 const widget = document.querySelector('[data-widget="show-secret"]');
 if (widget) {

@@ -4,7 +4,7 @@
       "js": [
         "/build/runtime.13b4a842.js",
         "/build/138.5f0ae2e5.js",
-        "/build/app.d51c6681.js"
+        "/build/app.a222874c.js"
       ],
       "css": [
         "/build/app.826d743a.css"
@@ -14,7 +14,7 @@
   "integrity": {
     "/build/runtime.13b4a842.js": "sha384-fHUT3b7aQAn47N7C5NdP++0PgAMKXozRUDWVVMnQwIgySZvnXRquQ3SQNpnkm7Xz",
     "/build/138.5f0ae2e5.js": "sha384-AxbZrfwWF8g1ax05t3hNzygrVxnTs3t5AgtlL0nJwP19HEp6h6pXsu3hU0eWqzqX",
-    "/build/app.d51c6681.js": "sha384-h8GqV5iJMA31ujJbtWpnSmFoXP44oreK0M5OdjkXHAzHQQjASjtUi1OGu48ungfO",
+    "/build/app.a222874c.js": "sha384-80Ggtz/opGC1ixBeAL+UqfLw/SDzEH9AKZtxUbAzO0+0zF9wCq/lyvBtyZ3uasSt",
     "/build/app.826d743a.css": "sha384-5h4i3p/srv+/QGnzd4MDyJjusTuMWOkCiUabCcXd+1rcCMBg2V+qNNwhCtrAEcaW"
   }
 }

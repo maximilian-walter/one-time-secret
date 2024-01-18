@@ -45,6 +45,9 @@
 
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set Content-Security-Policy "img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; default-src 'none'"
+    Header set Referrer-Policy "no-referrer"
 
     <FilesMatch "\.(s?html?|php\d?)$">
         Header set X-UA-Compatible "IE=edge"
@@ -104,7 +107,7 @@
   </FilesMatch>
   <FilesMatch ".(eot|ttf|otf|woff)">
     Header set Access-Control-Allow-Origin "*"
-</FilesMatch>
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_rewrite.c>
